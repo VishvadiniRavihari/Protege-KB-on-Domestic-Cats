@@ -1,0 +1,1409 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Owner="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Owner&apos;">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#has_a_behavior_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#has_a_behavior_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Behavior"/>
+        <rdfs:comment>This is in the for of BREED has a behavior of BEHAVIOR.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#has_a_coat_colour_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#has_a_coat_colour_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Coat_Color"/>
+        <rdfs:comment>This is in the for of BREED has a coat colour of COAT COLOUR</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#has_a_coat_pattern_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#has_a_coat_pattern_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Coat_Pattern"/>
+        <rdfs:comment>This is in the for of BREED has a coat pattern of COAT PATTERN.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#has_a_preferred_diet_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#has_a_preferred_diet_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Preferred_Diet"/>
+        <rdfs:comment>This is in the for of BREED has a preferred diet of PREFERRED DIET.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>This relates to age of a particular cat.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_Life_Expectancy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_Life_Expectancy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>This relates to average life expectancy of a particular cat.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_Size_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_Size_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Large</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Medium</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Small</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>This relates to average size of a particular cat. this could be either small/ medium/ large.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_Sleep_time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_Sleep_time">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>This relates to average sleeptime  of a particular cat. .</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Female</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Male</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>This relates to gender of a particular cat.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Height">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>This relates to height of a particular cat.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Most_dominent_personality_traits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Most_dominent_personality_traits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This relates to most dominent personality of a particular cat.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Net_Weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Net_Weight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Preferred_Diet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>This relates to the net weight of a particular cat food item.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Origin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Origin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This relates to origin of a particular cat.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Pet_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Pet_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This relates to pet name of a particular cat.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Preferred_Diet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>This relates to the price of a particular cat food item.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Weight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>This relates to weight of a particular cat.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Owner&apos;s_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Owner&apos;s_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This relates to owner&apos;s name of a particular cat.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Activeness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Activeness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Individual_Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Affection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Affection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Individual_Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#American_Shorthair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#American_Shorthair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Western"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Behavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Behavior">
+        <rdfs:comment>This class specifies an hierarchy of possible beahavior which can be expeted from a particular cats. The behavior is mainly divided into individual behavior or interaction related behavior.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Bengal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Bengal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Egyptian_Mau"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Savannah"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Birman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Birman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Siamese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed">
+        <rdfs:comment>This class specifies the hierarchy of commonly found cat breeds.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#British_Shorthair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#British_Shorthair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Persian"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Persian_Original"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Burmese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Burmese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Eastern"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Siamese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Coat_Color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Coat_Color">
+        <rdfs:comment>This class specifies coat color which could be either dark or light</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Coat_Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Coat_Pattern">
+        <rdfs:comment>This class specifies a coat pattern which could be either multi color pattern or a one color pattern.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Dark_Color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Dark_Color">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Coat_Color"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Dry_Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Dry_Food">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Preferred_Diet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Eastern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Eastern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Egyptian_Mau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Egyptian_Mau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Exotic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Exotic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Exotic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Exotic_Shorthair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Exotic_Shorthair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Persian_Original"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Himalayan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Grooming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Grooming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Individual_Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Himalayan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Himalayan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Persian_Original"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Independence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Independence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Individual_Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Individual_Behavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Individual_Behavior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Intelligence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Intelligence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Individual_Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Interaction_Related_Behavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Interaction_Related_Behavior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Kid_Friendliness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Kid_Friendliness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Interaction_Related_Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Light_Color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Light_Color">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Coat_Color"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Maine_Coon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Maine_Coon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Western"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Multi_Color_Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Multi_Color_Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Coat_Pattern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Norwegian_Forest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Norwegian_Forest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Western"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#One_Color_Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#One_Color_Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Coat_Pattern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Oriental_Shorthair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Oriental_Shorthair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Siamese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Persian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Persian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Persian_Original -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Persian_Original">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Persian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Pet_Friendliness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Pet_Friendliness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Interaction_Related_Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Peterbald -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Peterbald">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Siamese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Playfulness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Playfulness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Interaction_Related_Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Preferred_Diet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Preferred_Diet">
+        <rdfs:comment>This class specifies preferred  diet by a particular cats. This could be either dry food, wet food or semi moist food.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#RagDoll -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#RagDoll">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Turkish_Angora"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Russian_Blue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Russian_Blue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Western"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Savannah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Savannah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Egyptian_Mau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Scottish_Fold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Scottish_Fold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#British_Shorthair"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Semi_Moist_Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Semi_Moist_Food">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Preferred_Diet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Siamese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Siamese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Eastern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Siberian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Siberian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Western"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Sociability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Sociability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Interaction_Related_Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Turkish_Angora -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Turkish_Angora">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Western"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Vocality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Vocality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Interaction_Related_Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Western -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Western">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Breed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Wet_Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Wet_Food">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Preferred_Diet"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_activeness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_activeness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Activeness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_affection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_affection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Affection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_grooming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_grooming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Grooming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_independence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_independence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Independence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_intelligence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_intelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Intelligence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_kid_friendliness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_kid_friendliness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Kid_Friendliness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_pet_friendliness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_pet_friendliness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Pet_Friendliness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_playfulness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_playfulness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Playfulness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_sociability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_sociability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Sociability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_vocality -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Average_vocality">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Vocality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Beige_Color -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Beige_Color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Light_Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Bicolor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Bicolor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Multi_Color_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Black_Colour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Black_Colour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Dark_Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Blue_Color -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Blue_Color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Dark_Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Brown_Color -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Brown_Color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Dark_Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#CORE_Chicken_Pate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#CORE_Chicken_Pate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Wet_Food"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">575</Price>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">440</Weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#CRAVE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#CRAVE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Dry_Food"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">465</Price>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">295</Weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Turkish_Angora"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</Average_Life_Expectancy>
+        <Average_Size_type>Medium</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Average_Sleep_time>
+        <Gender>Female</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.5</Height>
+        <Most_dominent_personality_traits>Playful,Affectionate,Intelligent,Friendly</Most_dominent_personality_traits>
+        <Origin>Turkey</Origin>
+        <Pet_name>Lola</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.2</Weight>
+        <Owner:s_name>Ms Claire</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#RagDoll"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</Average_Life_Expectancy>
+        <Average_Size_type>Large</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Average_Sleep_time>
+        <Gender>Male</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.2</Height>
+        <Most_dominent_personality_traits>Sweet,Easygoing,Gentle,Relaxed</Most_dominent_personality_traits>
+        <Origin>US</Origin>
+        <Pet_name>Simba</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.4</Weight>
+        <Owner:s_name>Mr Parker</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Norwegian_Forest"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</Average_Life_Expectancy>
+        <Average_Size_type>Large</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Average_Sleep_time>
+        <Gender>Male</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.4</Height>
+        <Most_dominent_personality_traits>Playful,Sweet,Family-Oriented,Affectionate</Most_dominent_personality_traits>
+        <Origin>Norway</Origin>
+        <Pet_name>Tigger</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</Weight>
+        <Owner:s_name>Mr Ken</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Maine_Coon"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Average_Life_Expectancy>
+        <Average_Size_type>Large</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Average_Sleep_time>
+        <Gender>Female</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.1</Height>
+        <Most_dominent_personality_traits>Gorgeous,Kind,Gentle,Family-Oriented</Most_dominent_personality_traits>
+        <Origin>US</Origin>
+        <Pet_name>Lily</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.8</Weight>
+        <Owner:s_name>Mrs Norris</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Siberian"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</Average_Life_Expectancy>
+        <Average_Size_type>Medium</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.5</Average_Sleep_time>
+        <Gender>Male</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.6</Height>
+        <Most_dominent_personality_traits>Energetic, friendly, playful, affectionate</Most_dominent_personality_traits>
+        <Origin>Russia</Origin>
+        <Pet_name>Twinkle</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.4</Weight>
+        <Owner:s_name>Mr Bing</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#American_Shorthair"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</Average_Life_Expectancy>
+        <Average_Size_type>Medium</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.5</Average_Sleep_time>
+        <Gender>Female</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.9</Height>
+        <Most_dominent_personality_traits>Active, inquisitive, playful, personable</Most_dominent_personality_traits>
+        <Origin>US</Origin>
+        <Pet_name>Carla</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Weight>
+        <Owner:s_name>Mr Liam</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat07">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Russian_Blue"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</Average_Life_Expectancy>
+        <Average_Size_type>Short</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</Average_Sleep_time>
+        <Gender>Male</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.2</Height>
+        <Most_dominent_personality_traits>Affectionate, playful, inquisitive, family-oriented</Most_dominent_personality_traits>
+        <Origin>Russia</Origin>
+        <Pet_name>Zoe</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Weight>
+        <Owner:s_name>No owner</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Persian_Original"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</Average_Life_Expectancy>
+        <Average_Size_type>Medium</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.5</Average_Sleep_time>
+        <Gender>Male</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Height>
+        <Most_dominent_personality_traits>Sweet, sensitive, playful, charming</Most_dominent_personality_traits>
+        <Pet_name>Nicky</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Weight>
+        <Owner:s_name>Mr Parker</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat09 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat09">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Exotic_Shorthair"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</Average_Life_Expectancy>
+        <Average_Size_type>Medium</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</Average_Sleep_time>
+        <Gender>Male</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</Height>
+        <Most_dominent_personality_traits>Endearing, quiet, affectionate, gentle</Most_dominent_personality_traits>
+        <Origin>US</Origin>
+        <Pet_name>Caster</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</Weight>
+        <Owner:s_name>Mrs Samantha</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Himalayan"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</Average_Life_Expectancy>
+        <Average_Size_type>Medium</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.5</Average_Sleep_time>
+        <Gender>Male</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Height>
+        <Most_dominent_personality_traits>Gentle, affectionate, family-friendly, sweet</Most_dominent_personality_traits>
+        <Origin>US</Origin>
+        <Pet_name>Tiger</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Weight>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</Weight>
+        <Owner:s_name>Mr John</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#British_Shorthair"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</Average_Life_Expectancy>
+        <Average_Size_type>Medium</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.5</Average_Sleep_time>
+        <Gender>Female</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Height>
+        <Most_dominent_personality_traits>Affectionate, easygoing, sensible, friendly</Most_dominent_personality_traits>
+        <Origin>UK</Origin>
+        <Pet_name>Nala</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</Weight>
+        <Owner:s_name>Ms Petts</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Scottish_Fold"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</Average_Life_Expectancy>
+        <Average_Size_type>Medium</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Average_Sleep_time>
+        <Gender>Female</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</Height>
+        <Most_dominent_personality_traits>Family-oriented, quiet, affectionate, loyal</Most_dominent_personality_traits>
+        <Origin>UK</Origin>
+        <Pet_name>Twiny</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Weight>
+        <Owner:s_name>Mr Bardon</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Savannah"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</Average_Life_Expectancy>
+        <Average_Size_type>Large</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.5</Average_Sleep_time>
+        <Gender>Female</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.2</Height>
+        <Most_dominent_personality_traits>Friendly, affectionate, playful, intelligent</Most_dominent_personality_traits>
+        <Origin>US</Origin>
+        <Pet_name>Sassy</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</Weight>
+        <Owner:s_name>Ms Lara</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Bengal"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</Average_Life_Expectancy>
+        <Average_Size_type>Large</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.5</Average_Sleep_time>
+        <Gender>Male</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.8</Height>
+        <Most_dominent_personality_traits>Energetic, curious, affectionate, intelligent</Most_dominent_personality_traits>
+        <Origin>US</Origin>
+        <Pet_name>Robert</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</Weight>
+        <Owner:s_name>Ms Tincy</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Egyptian_Mau"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</Average_Life_Expectancy>
+        <Average_Size_type>Small</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Average_Sleep_time>
+        <Gender>Male</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Height>
+        <Most_dominent_personality_traits>Alert, devoted, affectionate, sensitive</Most_dominent_personality_traits>
+        <Origin>Egypt</Origin>
+        <Pet_name>Caesar</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Weight>
+        <Owner:s_name>Mr Peterson</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cat16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Maine_Coon"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Age>
+        <Average_Life_Expectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Average_Life_Expectancy>
+        <Average_Size_type>Large</Average_Size_type>
+        <Average_Sleep_time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</Average_Sleep_time>
+        <Gender>Male</Gender>
+        <Height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.8</Height>
+        <Most_dominent_personality_traits>&quot;Gorgeous,Kind,Gentle,Family-Oriented&quot;</Most_dominent_personality_traits>
+        <Origin>US</Origin>
+        <Pet_name>Nicky</Pet_name>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.2</Weight>
+        <Owner:s_name>Mr Coats</Owner:s_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Chocolate_Color -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Chocolate_Color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Dark_Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cinnamon_Color -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Cinnamon_Color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Light_Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Colorprint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Colorprint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#One_Color_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_activeness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_activeness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Activeness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_affection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_affection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Affection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_grooming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_grooming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Grooming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_independence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_independence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Independence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_intelligence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_intelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Intelligence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_kid_friendliness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_kid_friendliness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Kid_Friendliness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_pet_friendliness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_pet_friendliness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Pet_Friendliness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_playfulness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_playfulness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Playfulness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_sociability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_sociability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Sociability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_vocality -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#High_vocality">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Vocality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Lavender_Color -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Lavender_Color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Light_Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Lilac_Color -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Lilac_Color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Light_Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_activeness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_activeness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Activeness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_affection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_affection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Affection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_grooming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_grooming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Grooming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_independence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_independence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Independence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_intelligence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_intelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Intelligence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_kid_friendliness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_kid_friendliness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Kid_Friendliness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_pet_friendliness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_pet_friendliness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Pet_Friendliness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_playfulness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_playfulness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Playfulness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_sociability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_sociability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Sociability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_vocality -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Low_vocality">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Vocality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Orange_Color -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Orange_Color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Light_Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#PURINA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#PURINA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Semi_Moist_Food"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</Price>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">395</Weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#ROYAL_CANIN_Tuna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#ROYAL_CANIN_Tuna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Wet_Food"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</Price>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">440</Weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Solid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Solid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#One_Color_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Tabby -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Tabby">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#One_Color_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Tortoise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Tortoise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Multi_Color_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Tricolor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Tricolor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Multi_Color_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#WAGGERS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#WAGGERS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Semi_Moist_Food"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">470</Price>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">395</Weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#White_Color -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#White_Color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Light_Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#CAT_&amp;_KITTEN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#CAT_&amp;_KITTEN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Dry_Food"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</Price>
+        <Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">295</Weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Eastern"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Exotic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Persian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2022/11/domestic_cats_G4#Western"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
